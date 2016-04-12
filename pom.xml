@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.lirazs.jsinterop.library</groupId>
+    <artifactId>gwt-jsinterop-library</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0</version>
+    <name>Gwt JSInterop Library</name>
+	<description>GWT JSinterop library for commonly used javascript libraries.</description>
+    <url>https://github.com/liraz/gwt-jsinterop-library</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+            <comments>Same as Bootstrap</comments>
+        </license>
+    </licenses>
+
+    <inceptionYear>2016</inceptionYear>
+
+    <scm>
+        <url>git@github.com:liraz/gwt-jsinterop-library.git</url>
+        <connection>scm:git@github.com:liraz/gwt-jsinterop-library.git</connection>
+        <developerConnection>scm:git@github.com:liraz/gwt-jsinterop-library.git</developerConnection>
+        <tag>0.1.0</tag>
+    </scm>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/liraz/gwt-jsinterop-library/issues</url>
+    </issueManagement>
+
+    <organization>
+        <name>liraz</name>
+        <url>https://github.com/liraz</url>
+    </organization>
+	
+	<developers>
+        <developer>
+            <id>lirazshilk</id>
+            <name>Liraz Shilkrot</name>
+            <email>lirazshilk@gmail.com</email>
+            <roles>
+                <role>Project Manager</role>
+                <role>Architect</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+    </developers>
+
+    <contributors>
+        <contributor>
+            <name>Liraz Shilkrot</name>
+            <email>lirazshilk@gmail.com</email>
+            <roles>
+                <role>Project Manager</role>
+                <role>Architect</role>
+                <role>Developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </contributor>
+    </contributors>
+
+    <ciManagement>
+        <system>Travis CI</system>
+    </ciManagement>
+
+    <modules>
+
+    </modules>
+
+    <properties>
+        <gwtversion>2.7.0</gwtversion>
+        <gwtmaven>2.7.0</gwtmaven>
+        <gwt.loglevel>INFO</gwt.loglevel>
+        <gwt.outputstyle>OBF</gwt.outputstyle>
+        <appengine.app.version>1</appengine.app.version>
+        <appengine.target.version>1.9.30</appengine.target.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-pmd-plugin</artifactId>
+                    <configuration>
+                        <targetJdk>1.7</targetJdk>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <preparationGoals>clean install</preparationGoals>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo1</id>
+            <url>http://repo1.maven.org/maven2</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
